@@ -1,23 +1,6 @@
 import { Instagram, Facebook } from "lucide-react";
-import { useState, useEffect } from "react";
 import heroBanner from "@/assets/hero-banner.jpg";
 const Hero = () => {
-  const jomhaVariations = ["JOMHA", "𑢮𑢩𑢶𑢡𑢤𑢡", "जोमह"];
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isVisible, setIsVisible] = useState(true);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsVisible(false);
-      setTimeout(() => {
-        setCurrentIndex((prev) => (prev + 1) % jomhaVariations.length);
-        setIsVisible(true);
-      }, 500);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
       backgroundImage: `url(${heroBanner})`
@@ -27,12 +10,7 @@ const Hero = () => {
       
       <div className="relative z-10 container-custom text-center text-primary-foreground px-4">
         <h1 className="font-brillant text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight uppercase animate-in fade-in slide-in-from-bottom-4 duration-1000">
-          Welcome To{" "}
-          <span 
-            className={`inline-block transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
-          >
-            {jomhaVariations[currentIndex]}
-          </span>
+          JOMHA
         </h1>
         <p className="text-xl md:text-2xl lg:text-3xl mb-4 font-medium animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-150">Authentic Tribal Cuisine Restaurant</p>
         <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto opacity-90 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300">

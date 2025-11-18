@@ -1,10 +1,11 @@
 import { BookOpen, Target } from "lucide-react";
+
 const AboutUs = () => {
   return <section id="about" className="section-padding bg-muted/30">
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">About JOMHA</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">About Jomha</h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
             A celebration of tribal heritage through authentic cuisine and cultural experiences
           </p>
