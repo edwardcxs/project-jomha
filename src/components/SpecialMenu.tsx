@@ -15,37 +15,31 @@ const menuItems = [
   {
     title: "Bamboo Biryani",
     description: "Authentic tribal biryani cooked in bamboo stalks with aromatic rice and traditional spices",
-    price: "₹400",
     image: riceImg
   },
   {
     title: "Patra Poda",
     description: "Fish wrapped in banana leaves and slow-cooked with tribal herbs and spices",
-    price: "₹350",
     image: fishImg
   },
   {
     title: "Handi Mansa",
     description: "Slow-cooked mutton curry in earthen pot with authentic tribal masala",
-    price: "₹400",
     image: boarImg
   },
   {
     title: "Mudhi Mansa",
     description: "Traditional tribal mutton curry served with puffed rice",
-    price: "₹300",
     image: venisonImg
   },
   {
     title: "Desi Chicken",
     description: "Free-range country chicken cooked in traditional tribal style with aromatic spices",
-    price: "₹400",
     image: poultryImg
   },
   {
     title: "Millet Special",
     description: "Nutritious millet-based traditional dish cooked with seasonal vegetables and tribal herbs",
-    price: "₹400",
     image: vegetablesImg
   }
 ];
@@ -75,8 +69,7 @@ const SpecialMenu = () => {
                 <CardTitle className="text-xl text-foreground">{item.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-4">{item.description}</p>
-                <p className="text-2xl font-bold text-primary">{item.price}</p>
+                <p className="text-muted-foreground">{item.description}</p>
               </CardContent>
             </Card>
           ))}
