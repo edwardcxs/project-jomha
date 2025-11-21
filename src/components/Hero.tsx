@@ -9,12 +9,12 @@ const Hero = () => {
       </div>
       
       <div className="relative z-10 container-custom text-center text-primary-foreground px-4">
-        <h1 className="font-brillant text-5xl md:text-7xl font-bold mb-6 tracking-tight uppercase animate-in fade-in slide-in-from-bottom-4 duration-1000 lg:text-7xl">
+        <h1 className="font-brillant text-5xl md:text-7xl font-bold mb-6 tracking-tight uppercase animate-in fade-in slide-in-from-bottom-4 duration-1000 lg:text-8xl">
           JOMHA
         </h1>
-        <p className="text-xl md:text-2xl lg:text-3xl mb-4 font-medium animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-150">Authentic Tribal Cuisine Restaurant</p>
-        <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto opacity-90 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300">
-          Experience the rich heritage and authentic flavors of traditional tribal cooking
+        
+        <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto opacity-90 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300 font-medium">
+          Authentic Tribal Cuisine Restaurant | Experience the rich heritage and authentic flavors of traditional tribal cooking
         </p>
         <div className="flex gap-6 justify-center animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-500">
           <a href="https://www.instagram.com/jomha.restro" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-primary/20 hover:bg-primary/30 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:-translate-y-1" aria-label="Instagram">
