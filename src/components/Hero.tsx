@@ -9,7 +9,7 @@ const Hero = () => {
       </div>
       
       <div className="relative z-10 container-custom text-center text-primary-foreground px-4">
-        <h1 className="font-brillant text-5xl md:text-7xl font-bold mb-6 tracking-tight uppercase animate-in fade-in slide-in-from-bottom-4 duration-1000 lg:text-7xl">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight uppercase animate-in fade-in slide-in-from-bottom-4 duration-1000 font-sans lg:text-9xl">
           JOMHA
         </h1>
         <p className="text-xl md:text-2xl lg:text-3xl mb-4 font-medium animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-150">
