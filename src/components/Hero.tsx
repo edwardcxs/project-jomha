@@ -12,7 +12,8 @@ const Hero = () => {
         <h1 className="font-brillant text-5xl md:text-7xl font-bold mb-6 tracking-tight uppercase animate-in fade-in slide-in-from-bottom-4 duration-1000 lg:text-7xl">
           JOMHA
         </h1>
-        <p className="text-xl md:text-2xl lg:text-3xl mb-4 font-medium animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-150">Authentic Tribal Cuisine Restaurant</p>
+        <p className="text-xl md:text-2xl lg:text-3xl mb-4 font-medium animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-150">
+      </p>
         <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto opacity-90 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300">
           Authentic Cuisine Restaurant | Experience the rich heritage and authentic flavors of traditional tribal cooking.
         </p>
