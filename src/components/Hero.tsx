@@ -9,7 +9,7 @@ const Hero = () => {
       </div>
       
       <div className="relative z-10 container-custom text-center text-primary-foreground px-4">
-        <h1 className="font-brillant text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight uppercase animate-in fade-in slide-in-from-bottom-4 duration-1000">
+        <h1 className="font-brillant text-5xl md:text-7xl font-bold mb-6 tracking-tight uppercase animate-in fade-in slide-in-from-bottom-4 duration-1000 lg:text-7xl">
           JOMHA
         </h1>
         <p className="text-xl md:text-2xl lg:text-3xl mb-4 font-medium animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-150">Authentic Tribal Cuisine Restaurant</p>
@@ -17,22 +17,10 @@ const Hero = () => {
           Experience the rich heritage and authentic flavors of traditional tribal cooking
         </p>
         <div className="flex gap-6 justify-center animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-500">
-          <a 
-            href="https://www.instagram.com/jomha.restro" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="p-3 rounded-full bg-primary/20 hover:bg-primary/30 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:-translate-y-1"
-            aria-label="Instagram"
-          >
+          <a href="https://www.instagram.com/jomha.restro" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-primary/20 hover:bg-primary/30 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:-translate-y-1" aria-label="Instagram">
             <Instagram className="w-6 h-6 text-primary-foreground" />
           </a>
-          <a 
-            href="https://www.facebook.com/share/1A3APocFBk/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="p-3 rounded-full bg-primary/20 hover:bg-primary/30 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:-translate-y-1"
-            aria-label="Facebook"
-          >
+          <a href="https://www.facebook.com/share/1A3APocFBk/" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-primary/20 hover:bg-primary/30 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:-translate-y-1" aria-label="Facebook">
             <Facebook className="w-6 h-6 text-primary-foreground" />
           </a>
         </div>
