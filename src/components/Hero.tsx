@@ -56,8 +56,8 @@ const Hero = () => {
             </Carousel>
           </div>
 
-          {/* Right: Text */}
-          <div className="order-1 lg:order-2 text-primary-foreground text-center lg:text-right">
+          {/* Left: Text */}
+          <div className="order-1 lg:order-1 text-primary-foreground text-center lg:text-left">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight uppercase animate-in fade-in slide-in-from-bottom-4 duration-1000 font-sans">
               JOMHA
             </h1>
