@@ -75,6 +75,28 @@ const Hero = () => {
                 </Button>
               </Link>
             </div>
+            <div className="flex flex-wrap gap-4 justify-center lg:justify-start mb-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-600">
+              <a
+                href="https://www.zomato.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-5 py-3 rounded-full bg-[#E23744] hover:bg-[#c82d3a] text-white font-semibold shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-1"
+                aria-label="Order on Zomato"
+              >
+                <Utensils className="w-5 h-5" />
+                <span>Order on Zomato</span>
+              </a>
+              <a
+                href="https://www.swiggy.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-5 py-3 rounded-full bg-[#FC8019] hover:bg-[#e0700f] text-white font-semibold shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-1"
+                aria-label="Order on Swiggy"
+              >
+                <Bike className="w-5 h-5" />
+                <span>Order on Swiggy</span>
+              </a>
+            </div>
             <div className="flex gap-6 justify-center lg:justify-start animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-700">
               <a
                 href="https://www.instagram.com/jomha.restro"
