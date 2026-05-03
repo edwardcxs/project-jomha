@@ -26,8 +26,8 @@ const Hero = () => {
 
       <div className="relative z-10 container-custom px-4 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left: Carousel */}
-          <div className="order-2 lg:order-1 animate-in fade-in slide-in-from-left-4 duration-1000">
+          {/* Right: Carousel */}
+          <div className="order-2 lg:order-2 animate-in fade-in slide-in-from-right-4 duration-1000">
             <Carousel
               opts={{ align: "start", loop: true }}
               plugins={[Autoplay({ delay: 3000 })]}
