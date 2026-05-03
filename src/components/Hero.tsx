@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Utensils, Bike } from "lucide-react";
+import { Utensils, Bike } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
