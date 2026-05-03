@@ -1,31 +1,105 @@
 import { Instagram, Facebook } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import heroBanner from "@/assets/hero-banner.jpg";
+import riceImg from "@/assets/herb-rice.jpg";
+import fishImg from "@/assets/river-fish.jpg";
+import boarImg from "@/assets/wild-boar.jpg";
+
+const specialDishes = [
+  { title: "Bamboo Biryani", image: riceImg },
+  { title: "Patra Poda", image: fishImg },
+  { title: "Handi Mansa", image: boarImg },
+];
+
 const Hero = () => {
-  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-      backgroundImage: `url(${heroBanner})`
-    }}>
+  return (
+    <section className="relative min-h-screen flex items-center overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBanner})` }}
+      >
         <div className="absolute inset-0 bg-primary/90" />
       </div>
-      
-      <div className="relative z-10 container-custom text-center text-primary-foreground px-4">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight uppercase animate-in fade-in slide-in-from-bottom-4 duration-1000 font-sans lg:text-9xl">
-          JOMHA
-        </h1>
-        <p className="text-xl md:text-2xl lg:text-3xl mb-4 font-medium animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-150">
-      </p>
-        <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto opacity-90 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300">
-          Authentic Cuisine Restaurant | Experience the rich heritage and authentic flavors of traditional tribal cooking.
-        </p>
-        <div className="flex gap-6 justify-center animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-500">
-          <a href="https://www.instagram.com/jomha.restro" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-primary/20 hover:bg-primary/30 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:-translate-y-1" aria-label="Instagram">
-            <Instagram className="w-6 h-6 text-primary-foreground" />
-          </a>
-          <a href="https://www.facebook.com/share/1A3APocFBk/" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-primary/20 hover:bg-primary/30 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:-translate-y-1" aria-label="Facebook">
-            <Facebook className="w-6 h-6 text-primary-foreground" />
-          </a>
+
+      <div className="relative z-10 container-custom px-4 py-20">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left: Carousel */}
+          <div className="order-2 lg:order-1 animate-in fade-in slide-in-from-left-4 duration-1000">
+            <Carousel
+              opts={{ align: "start", loop: true }}
+              plugins={[Autoplay({ delay: 3000 })]}
+              className="w-full max-w-md mx-auto"
+            >
+              <CarouselContent>
+                {specialDishes.map((dish, i) => (
+                  <CarouselItem key={i}>
+                    <div className="overflow-hidden rounded-2xl shadow-2xl">
+                      <div className="relative aspect-square">
+                        <img
+                          src={dish.image}
+                          alt={dish.title}
+                          className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-foreground/80 to-transparent p-6">
+                          <h3 className="text-2xl font-bold text-primary-foreground">
+                            {dish.title}
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
+          </div>
+
+          {/* Right: Text */}
+          <div className="order-1 lg:order-2 text-primary-foreground text-center lg:text-right">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight uppercase animate-in fade-in slide-in-from-bottom-4 duration-1000 font-sans">
+              JOMHA
+            </h1>
+            <p className="text-lg md:text-xl mb-8 max-w-xl ml-auto opacity-90 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300">
+              Authentic Cuisine Restaurant | Experience the rich heritage and authentic flavors of traditional tribal cooking.
+            </p>
+            <div className="mb-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-500">
+              <Link to="/menu">
+                <Button
+                  size="lg"
+                  variant="secondary"
+                  className="px-10 py-6 text-lg font-semibold shadow-lg"
+                >
+                  View Menu
+                </Button>
+              </Link>
+            </div>
+            <div className="flex gap-6 justify-center lg:justify-end animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-700">
+              <a
+                href="https://www.instagram.com/jomha.restro"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-full bg-primary/20 hover:bg-primary/30 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:-translate-y-1"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-6 h-6 text-primary-foreground" />
+              </a>
+              <a
+                href="https://www.facebook.com/share/1A3APocFBk/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-full bg-primary/20 hover:bg-primary/30 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:-translate-y-1"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-6 h-6 text-primary-foreground" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
