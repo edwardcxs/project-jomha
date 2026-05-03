@@ -26,8 +26,8 @@ const Hero = () => {
 
       <div className="relative z-10 container-custom px-4 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left: Carousel */}
-          <div className="order-2 lg:order-1 animate-in fade-in slide-in-from-left-4 duration-1000">
+          {/* Right: Carousel */}
+          <div className="order-2 lg:order-2 animate-in fade-in slide-in-from-right-4 duration-1000">
             <Carousel
               opts={{ align: "start", loop: true }}
               plugins={[Autoplay({ delay: 3000 })]}
@@ -56,12 +56,12 @@ const Hero = () => {
             </Carousel>
           </div>
 
-          {/* Right: Text */}
-          <div className="order-1 lg:order-2 text-primary-foreground text-center lg:text-right">
+          {/* Left: Text */}
+          <div className="order-1 lg:order-1 text-primary-foreground text-center lg:text-left">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight uppercase animate-in fade-in slide-in-from-bottom-4 duration-1000 font-sans">
               JOMHA
             </h1>
-            <p className="text-lg md:text-xl mb-8 max-w-xl ml-auto opacity-90 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300">
+            <p className="text-lg md:text-xl mb-8 max-w-xl mr-auto opacity-90 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300">
               Authentic Cuisine Restaurant | Experience the rich heritage and authentic flavors of traditional tribal cooking.
             </p>
             <div className="mb-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-500">
@@ -75,7 +75,7 @@ const Hero = () => {
                 </Button>
               </Link>
             </div>
-            <div className="flex gap-6 justify-center lg:justify-end animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-700">
+            <div className="flex gap-6 justify-center lg:justify-start animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-700">
               <a
                 href="https://www.instagram.com/jomha.restro"
                 target="_blank"
