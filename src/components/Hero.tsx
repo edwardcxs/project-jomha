@@ -75,7 +75,7 @@ const Hero = () => {
                 </Button>
               </Link>
             </div>
-            <div className="flex gap-6 justify-center lg:justify-end animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-700">
+            <div className="flex gap-6 justify-center lg:justify-start animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-700">
               <a
                 href="https://www.instagram.com/jomha.restro"
                 target="_blank"
